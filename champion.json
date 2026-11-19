@@ -1,0 +1,24 @@
+{
+  "family": "nc-1-notation-compliance",
+  "cell_id": "g0-linear-svm-tfidf-char-raw-813c27",
+  "gen": 0,
+  "model": "linear-svm",
+  "model_level": {
+    "C": 0.5
+  },
+  "features": "tfidf-char",
+  "features_level": {
+    "ngram_max": 5
+  },
+  "layer": "raw",
+  "macro_f1": 0.7534,
+  "macro_f1_std": 0.146,
+  "acc": 0.7589,
+  "gold_acc": null,
+  "n_rows": 48,
+  "data_sha": "efae96d136ae84c34289bce6757127dc741c3e30",
+  "commit": "9f50d8a6596822a895b77c0820ade796a0584a2c",
+  "node": "actions",
+  "promoted_ts": "2026-11-19T09:07:05Z",
+  "history": []
+}
