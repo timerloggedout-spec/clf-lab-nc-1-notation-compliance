@@ -1,31 +1,37 @@
 {
   "family": "nc-1-notation-compliance",
-  "cell_id": "g1-linear-svm-tfidf-char-raw-0d65ff",
-  "gen": 1,
+  "cell_id": "g2-linear-svm-tfidf-char-raw-2cc767",
+  "gen": 2,
   "model": "linear-svm",
   "model_level": {
     "C": 2.0
   },
   "features": "tfidf-char",
   "features_level": {
-    "ngram_max": 5
+    "ngram_max": 6
   },
   "layer": "raw",
-  "macro_f1": 0.7735,
-  "macro_f1_std": 0.1239,
-  "acc": 0.78,
+  "macro_f1": 0.7942,
+  "macro_f1_std": 0.1223,
+  "acc": 0.8011,
   "gold_acc": null,
   "n_rows": 48,
-  "data_sha": "7471716faa05403b853e6e9542741b05ac69658c",
-  "commit": "d5011c25d5a06233309b3c1788a51fd624034b7e",
-  "node": "hark-vm",
-  "promoted_ts": "2026-11-19T20:41:04Z",
+  "data_sha": "7cc9fa7a6c86dc370427caab706a32ba3d517663",
+  "commit": "5441ba108cd1ea222f0f6033ccbd82818cce8a46",
+  "node": "actions",
+  "promoted_ts": "2026-11-20T07:19:01Z",
   "history": [
     {
       "cell_id": "g0-linear-svm-tfidf-char-raw-813c27",
       "gen": 0,
       "macro_f1": 0.7534,
       "promoted_ts": "2026-11-19T09:07:05Z"
+    },
+    {
+      "cell_id": "g1-linear-svm-tfidf-char-raw-0d65ff",
+      "gen": 1,
+      "macro_f1": 0.7735,
+      "promoted_ts": "2026-11-19T20:41:04Z"
     }
   ]
 }
