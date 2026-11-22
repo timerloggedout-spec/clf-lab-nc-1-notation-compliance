@@ -1,6 +1,6 @@
 schema: clf-lab-doe/v1
 family: nc-1-notation-compliance
-generation: 7
+generation: 8
 data_sha: null
 design: fractional-factorial
 design_note: '1/3 fraction: (feature_idx + layer_idx) mod 3 = model_idx mod 3'
@@ -117,65 +117,87 @@ factors:
 cells:
 - model: linear-svm
   model_level:
-    C: 128.0
-  features: hashing
-  features_level:
-    log2_features: 16
-  layer: dedup
-  id: g7-linear-svm-hashing-dedup-cdd170
-- model: linear-svm
-  model_level:
     C: 512.0
   features: tfidf-char
   features_level:
     ngram_max: 6
-  layer: dedup
-  id: g7-linear-svm-tfidf-char-dedup-857e54
-- model: linear-svm
-  model_level:
-    C: 128.0
-  features: tfidf-char
-  features_level:
-    ngram_max: 6
-  layer: raw
-  id: g7-linear-svm-tfidf-char-raw-c6bca1
-- model: linear-svm
-  model_level:
-    C: 128.0
-  features: tfidf-word
-  features_level:
-    ngram_max: 2
-  layer: dedup
-  id: g7-linear-svm-tfidf-word-dedup-e4909e
-- model: linear-svm
-  model_level:
-    C: 128.0
-  features: tfidf-char
-  features_level:
-    ngram_max: 7
-  layer: dedup
-  id: g7-linear-svm-tfidf-char-dedup-dccd4d
-- model: linear-svm
-  model_level:
-    C: 128.0
-  features: tfidf-char
-  features_level:
-    ngram_max: 6
   layer: augmented
-  id: g7-linear-svm-tfidf-char-augmented-9d7622
+  id: g8-linear-svm-tfidf-char-augmented-c0f0c3
 - model: linear-svm
   model_level:
     C: 128.0
   features: tfidf-char
   features_level:
     ngram_max: 5
+  layer: raw
+  id: g8-linear-svm-tfidf-char-raw-cfa240
+- model: linear-svm
+  model_level:
+    C: 512.0
+  features: hashing
+  features_level:
+    log2_features: 16
   layer: dedup
-  id: g7-linear-svm-tfidf-char-dedup-cac9b0
+  id: g8-linear-svm-hashing-dedup-04e3c8
+- model: linear-svm
+  model_level:
+    C: 512.0
+  features: tfidf-char
+  features_level:
+    ngram_max: 7
+  layer: dedup
+  id: g8-linear-svm-tfidf-char-dedup-8989a9
+- model: linear-svm
+  model_level:
+    C: 512.0
+  features: tfidf-char
+  features_level:
+    ngram_max: 5
+  layer: dedup
+  id: g8-linear-svm-tfidf-char-dedup-45292f
+- model: linear-svm
+  model_level:
+    C: 128.0
+  features: hashing
+  features_level:
+    log2_features: 16
+  layer: raw
+  id: g8-linear-svm-hashing-raw-11aafe
+- model: linear-svm
+  model_level:
+    C: 128.0
+  features: tfidf-char
+  features_level:
+    ngram_max: 7
+  layer: raw
+  id: g8-linear-svm-tfidf-char-raw-a78a66
+- model: linear-svm
+  model_level:
+    C: 512.0
+  features: tfidf-word
+  features_level:
+    ngram_max: 2
+  layer: dedup
+  id: g8-linear-svm-tfidf-word-dedup-5b9ea1
+- model: linear-svm
+  model_level:
+    C: 128.0
+  features: tfidf-word
+  features_level:
+    ngram_max: 2
+  layer: raw
+  id: g8-linear-svm-tfidf-word-raw-fbb091
+- model: linear-svm
+  model_level:
+    C: 512.0
+  features: tfidf-char
+  features_level:
+    ngram_max: 6
+  layer: raw
+  id: g8-linear-svm-tfidf-char-raw-adf197
 parent_top:
-- g6-linear-svm-tfidf-char-dedup-bc6245
-- g6-linear-svm-tfidf-char-dedup-bc6245
-- g6-linear-svm-tfidf-char-dedup-bc6245
-minted_levels:
-- factor: model.linear-svm.C
-  new_level: 512.0
-generated_ts: '2026-11-22T06:51:31Z'
+- g7-linear-svm-tfidf-char-raw-c6bca1
+- g7-linear-svm-tfidf-char-dedup-857e54
+- g7-linear-svm-tfidf-char-dedup-857e54
+minted_levels: []
+generated_ts: '2026-11-22T19:43:17Z'
