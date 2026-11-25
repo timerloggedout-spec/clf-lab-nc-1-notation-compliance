@@ -1,6 +1,6 @@
 schema: clf-lab-doe/v1
 family: nc-1-notation-compliance
-generation: 13
+generation: 14
 data_sha: null
 design: fractional-factorial
 design_note: '1/3 fraction: (feature_idx + layer_idx) mod 3 = model_idx mod 3'
@@ -117,39 +117,23 @@ factors:
 cells:
 - model: linear-svm
   model_level:
-    C: 8.0
-  features: tfidf-char
-  features_level:
-    ngram_max: 7
-  layer: augmented
-  id: g13-linear-svm-tfidf-char-augmented-859c87
-- model: linear-svm
-  model_level:
     C: 32.0
-  features: tfidf-char
+  features: tfidf-word
   features_level:
-    ngram_max: 7
+    ngram_max: 2
   layer: raw
-  id: g13-linear-svm-tfidf-char-raw-b65f7a
+  id: g14-linear-svm-tfidf-word-raw-9164bb
 - model: linear-svm
   model_level:
     C: 32.0
   features: hashing
   features_level:
     log2_features: 16
-  layer: augmented
-  id: g13-linear-svm-hashing-augmented-9a9dd8
-- model: linear-svm
-  model_level:
-    C: 32.0
-  features: tfidf-word
-  features_level:
-    ngram_max: 2
-  layer: augmented
-  id: g13-linear-svm-tfidf-word-augmented-4e3e74
+  layer: raw
+  id: g14-linear-svm-hashing-raw-05bdbf
 parent_top:
-- g12-linear-svm-tfidf-char-augmented-e476e5
-- g12-linear-svm-tfidf-char-augmented-e476e5
-- g12-linear-svm-tfidf-char-augmented-e476e5
+- g13-linear-svm-tfidf-char-raw-b65f7a
+- g13-linear-svm-tfidf-char-raw-b65f7a
+- g13-linear-svm-tfidf-char-raw-b65f7a
 minted_levels: []
-generated_ts: '2026-11-25T08:37:51Z'
+generated_ts: '2026-11-25T21:43:51Z'
