@@ -1,6 +1,6 @@
 schema: clf-lab-doe/v1
 family: nc-1-notation-compliance
-generation: 14
+generation: 15
 data_sha: null
 design: fractional-factorial
 design_note: '1/3 fraction: (feature_idx + layer_idx) mod 3 = model_idx mod 3'
@@ -120,20 +120,20 @@ cells:
     C: 32.0
   features: tfidf-word
   features_level:
-    ngram_max: 2
+    ngram_max: 3
   layer: raw
-  id: g14-linear-svm-tfidf-word-raw-9164bb
+  id: g15-linear-svm-tfidf-word-raw-3f757c
 - model: linear-svm
   model_level:
     C: 32.0
-  features: hashing
+  features: tfidf-word
   features_level:
-    log2_features: 16
+    ngram_max: 1
   layer: raw
-  id: g14-linear-svm-hashing-raw-05bdbf
+  id: g15-linear-svm-tfidf-word-raw-fa6944
 parent_top:
-- g13-linear-svm-tfidf-char-raw-b65f7a
-- g13-linear-svm-tfidf-char-raw-b65f7a
-- g13-linear-svm-tfidf-char-raw-b65f7a
+- g14-linear-svm-tfidf-word-raw-9164bb
+- g14-linear-svm-tfidf-word-raw-9164bb
+- g14-linear-svm-tfidf-word-raw-9164bb
 minted_levels: []
-generated_ts: '2026-11-25T21:43:51Z'
+generated_ts: '2026-11-26T08:22:08Z'
