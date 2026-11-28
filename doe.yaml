@@ -1,7 +1,7 @@
 schema: clf-lab-doe/v1
 family: nc-1-notation-compliance
 generation: 18
-data_sha: null
+data_sha: 58cf7cfd9b029cb312b8db885ae1b838bbfa408a
 design: fractional-factorial
 design_note: '1/3 fraction: (feature_idx + layer_idx) mod 3 = model_idx mod 3'
 batch_size: 12
